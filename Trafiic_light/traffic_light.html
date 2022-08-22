@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="traffic_light.css" />
+  </head>
+
+  <body>
+    <div class="backgroundd">
+      <h1 class="traffic-light-heading text-center">Traffic Light</h1>
+      <div class="d-flex flex-row justify-content-center m-5">
+        <div class="d-flex flex-column">
+          <button class="button" id="stopButton" onclick="turnOnRed()">
+            Stop
+          </button>
+          <button class="button" id="readyButton" onclick="turnOnYellow()">
+            Ready
+          </button>
+          <button class="button" id="goButton" onclick="turnOnGreen()">
+            Go
+          </button>
+        </div>
+        <div class="traffic-light">
+          <div id="stopLight" class="bulb"></div>
+          <div id="readyLight" class="bulb"></div>
+          <div id="goLight" class="bulb"></div>
+        </div>
+      </div>
+    </div>
+    <script src="traffic_light.js"></script>
+  </body>
+</html>
 
